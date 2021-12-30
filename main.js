@@ -5,7 +5,9 @@ const handleSubmit = e =>{
     const codigo = document.getElementById("code").value;
     if(codigo != 208308) return alert("El codigo es incorrecto, usted es quien dice ser? 🤔");
 
-    window.location = "/congrat.html";
+    window.location = window.location.href + "/congrat.html";
 }
 
 form.addEventListener("submit", handleSubmit);
+
+console.log(window);
